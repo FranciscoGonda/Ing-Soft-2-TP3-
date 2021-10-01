@@ -1,19 +1,14 @@
 <?php 
-$n1 = $_GET['n1'];
-$n2 = $_GET['n2'];
+//se asignan las variables provenientes de $_POST
+$n1 = $_POST['n1'];
+$n2 = $_POST['n2'];
 
-$multiplicacion = $n1 * $n2
+//Hago la operacion y se la asigno a una nueva variable
+$multiplicacion = $n1 * $n2;
+//agrego una nueva condicion
+if ($n1 == 0 || $n2 == 0){
+	echo 'No se puede multiplicar por 0';
+}else{
+echo 'El resultado es: '.($multiplicacion);
+}
 ?>
-<!DOCTYPE html> 
-<html> 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title></title>
-	
-	</head>
-	<body>
-		<h1>Resultado</h1>
-		<?php echo "El resultado es $n1 * $n2 = $multiplicacion </p>"?> 
-	</body>
-</html>

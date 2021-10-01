@@ -6,12 +6,14 @@
 		<title>Ingenieria de Soft 2 Trabajo Practico N°3</title>
 	</head>
 	<body>
-		<h1> Sumar 2 numeros </h1>
-		<form action="Operaciones.php" method="get">
-		<label for="n1"> Primer Número: </label> 
-		<input type="number" name="n1"> <br>
+		<h1>Multiplicar 2 numeros</h1>
+		<!--Cambie el metodo GET por POST-->
+		<form action="Operaciones.php" method="POST">
+		<label for="n1">Primer Número: </label>
+		<!--Al imput le agregue step para que pueda usar decimales--> 
+		<input type="number" name="n1" step="0.01"> <br>
 		<label for="n2">Segundo numero: </label>
-		<input type="number" name="n2"> <br>
+		<input type="number" name="n2" step="0.01"> <br>
 		<input type="submit" name="sumar">
 		</form>
 	</body>
